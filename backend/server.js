@@ -13,7 +13,7 @@ app.use(cors({
     "http://localhost:5000",
     "http://127.0.0.1:5500",
     "https://makeoverbyreet.com",
-    "http://makeoverbyreet.com"
+    "https://www.makeoverbyreet.com"
   ],
   methods: ["GET", "POST", "OPTIONS"],
   credentials: true,
