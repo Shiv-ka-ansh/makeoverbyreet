@@ -24,10 +24,10 @@ const corsOptions = {
   },
   methods: ["GET", "POST", "OPTIONS"],
   credentials: true,
-  allowedHeaders: ["Content-Type", "Authorization"]
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 
-app.use(cors(corsOptions));
+app.use(cors(corsOptions));  // ✅ This is enough
 
 // ✅ Handle preflight requests (Express 5 requires new wildcard syntax)
 app.options("(.*)", cors(corsOptions));
